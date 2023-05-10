@@ -29,8 +29,14 @@ header {
     background-color: brown;
 }
 
+#sect_projects {
+    background-color: orange;
+}
+
 #card-projects {
     background-color: coral;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
 }
 
 #news {
