@@ -55,6 +55,27 @@ header {
     border: 2px solid #0776fe;
 }
 
+#user-center {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 1fr;
+}
+
+#header-bottom {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+}
+
+#btns {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left;
+}
+
+#btns button {
+    /* padding: 8px 4px 8px 4px; */
+}
+
 #sect_projects {
     background-color: orange;
     grid-row: 2 / 3;
