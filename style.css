@@ -31,6 +31,30 @@ header {
     grid-column: 2 / 4;
 }
 
+#header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#search {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+
+#search-input {
+    outline: none;
+    height: 100%;
+    padding: 0 12px 0px 4px;
+    font-size: 16px;
+    border-radius: 8rem;
+    border-style: none;
+}
+
+#search-input:focus-visible {
+    border: 2px solid #0776fe;
+}
+
 #sect_projects {
     background-color: orange;
     grid-row: 2 / 3;
