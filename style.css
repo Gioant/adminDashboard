@@ -170,6 +170,8 @@ header {
     display: grid;
     padding: 1rem 2rem 0 2rem;
     background-color: blueviolet;
+    place-content: flex-start;
+    gap: 2.25rem;
 }
 
 #announcement h2 {
@@ -203,7 +205,7 @@ header {
 
 .profile {
     display: grid;
-    grid-template-columns: 46px 2fr;
+    grid-template-columns: 50px 2fr;
     gap: 10px;
     align-items: center;
 }
