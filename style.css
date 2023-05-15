@@ -47,6 +47,7 @@ header {
     grid-row: 1 / 2;
     grid-column: 2 / 4;
     gap: 1rem;
+    padding: 0.5rem 1rem 1rem 2rem;
 }
 
 #header-top {
@@ -56,8 +57,12 @@ header {
 
 #search {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 50px auto;
     align-items: center;
+}
+
+#search img {
+    padding: 16px;
 }
 
 #search-input {
@@ -77,6 +82,7 @@ header {
     display: grid;
     grid-template-columns: 0.25fr 0.5fr 1fr;
     align-items: center;
+    padding-left: 2rem;
 }
 
 #user-center img:nth-child(2){
@@ -88,7 +94,8 @@ header {
 
 #header-bottom {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    align-items: center;
 }
 
 #main-usr img {
@@ -98,16 +105,29 @@ header {
     border-radius: 50%;
 }
 
+#usr-welcome {
+    display: grid;
+    gap: 0.5rem;
+}
+
+#usr-welcome p:nth-child(1){
+    font-size: 14px;
+}
+
+#usr-welcome p:nth-child(2){
+    font-size: 18px;
+}
+
 #btns {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    grid-template-columns: repeat(3, 0.2fr);
     justify-items: left;
 }
 
 #btns button {
     display: inline-block;
-    padding: 0 32px;
+    padding: 0 60px;
     height: 40px;
     border-radius: 1rem;
     border: 1px solid black;
