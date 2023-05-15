@@ -117,6 +117,7 @@ header {
 
 #usr-welcome p:nth-child(2) {
     font-size: 18px;
+    font-weight: bold;
 }
 
 #btns {
@@ -171,7 +172,16 @@ header {
 }
 
 #card-container {
-    padding-top: 1rem;
+    display: grid;
+    gap: 1.25rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(145, 145, 145);
+}
+
+.card-item hr {
+    margin-top: 0.75rem;
 }
 
 #userList {
