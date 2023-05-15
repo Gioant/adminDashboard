@@ -167,9 +167,15 @@ header {
 }
 
 #news {
+    display: grid;
     padding: 1rem 2rem 0 2rem;
     background-color: blueviolet;
 }
+
+#announcement h2 {
+    padding-bottom: 0.75rem;
+}
+
 
 #card-container {
     display: grid;
@@ -180,7 +186,12 @@ header {
     box-shadow: 1px 1px 5px rgb(145, 145, 145);
 }
 
+.card-item p {
+    padding-top: 0.25rem;
+}
+
 .card-item hr {
+    border: 0.5px solid rgb(182, 185, 200);
     margin-top: 0.75rem;
 }
 
