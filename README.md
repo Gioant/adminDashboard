@@ -1,6 +1,6 @@
 # adminDashboard
 
-##Preview:
+## Preview
 ![dashboard](https://github.com/Gioant/adminDashboard/assets/66393141/2a3e299a-f6d9-472f-8229-2ba815c8a6ac)
 
 A typical Admin Dashboard made from scratch with Html & Css. To practice using only grid layout.
