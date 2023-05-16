@@ -27,19 +27,27 @@ p {
     font-weight: 400;
 }
 
+#userName {
+    font-size: 20 px;
+    font-weight: bold;
+}
+
 nav {
-    background-color: bisque;
+    background-color: #1992d4;
+    color: #fff;
     display: grid;
     grid-row: 1 / 3;
     grid-template-rows: 1fr 2fr 2fr;
     place-content: flex-start;
     padding-left: 2rem;
+    gap: 1rem;
 }
 
 nav h1 {
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
 }
+
 
 nav li p{
     font-family: 'Lexend', sans-serif;
@@ -56,6 +64,7 @@ nav li p{
     grid-template-columns: auto auto;
     align-items: center;
     gap: 1rem;
+    padding-left: 16px;
 }
 
 #logo h1 {
@@ -66,16 +75,38 @@ nav li p{
 #bottom li {
     display: grid;
     grid-template-columns: 25% 1fr;
-    grid-auto-rows: 50px;
+    grid-template-rows: 50px;
+    align-items: center;
+    padding-left: 16px;
+}
+
+#mid li:hover, #bottom li:hover{
+    background-color: #015789;
+    border-radius: 8px;
+}
+
+#mid li:nth-child(1){
+    background-color: rgba(0,0,0,.3);
+    border-radius: 8px;
 }
 
 ul {
     list-style-type: none;
 }
 
+#mid, #bottom {
+    display: grid;
+    gap: 1rem;
+}
+
+#bottom {
+    padding-top: 4rem;
+    grid-template-rows: repeat(3, 50px);
+}
+
 
 header {
-    background-color: brown;
+    background-color: #fff;
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 4;
@@ -99,6 +130,7 @@ header {
 }
 
 #search-input {
+    background-color: #DEE6EC;
     outline: none;
     height: 60%;
     padding: 0 8px 0px 8px;
@@ -165,13 +197,17 @@ header {
 }
 
 #btns button {
-    background-color: #1992d4;
+    background-color: #027cc2;
     color: #fff;
     display: inline-block;
     height: 38px;
     border-radius: 1rem;
-    border: 1px solid black;
+    border: none;
     outline: none;
+}
+
+#btns button:hover {
+    background-color: #015789;
 }
 
 #sect_projects {
@@ -181,7 +217,7 @@ header {
     padding: 1rem 2rem 0rem 2rem;
 }
 
-#sect_projects p {
+#sect_projects p, .user p {
     color: #7d7e8a;
 }
 
