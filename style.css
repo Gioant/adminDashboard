@@ -7,7 +7,7 @@
 main {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1.25fr 4fr 2fr;
+    grid-template-columns: 1fr 4fr 2fr;
     grid-template-rows: 1fr 6fr;
 }
 
@@ -16,7 +16,8 @@ nav {
     display: grid;
     grid-row: 1 / 3;
     grid-template-rows: 1fr 2fr 2fr;
-    justify-content: center;
+    place-content: flex-start;
+    padding-left: 2rem;
 }
 
 #logo {
@@ -106,7 +107,7 @@ header {
     border-radius: 50%;
 }
 
-.main_usr-pic{
+.main_usr-pic {
     background-color: #0056a1;
 }
 
@@ -162,7 +163,7 @@ header {
     grid-template-rows: 1fr auto;
     box-shadow: 1px 1px 5px rgb(145, 145, 145);
     padding: 16px 0 8px 16px;
-    border-left: 8px solid;
+    border-left: 8px solid #f0b429;
     border-radius: 8px;
 }
 
@@ -176,6 +177,23 @@ header {
     place-content: end;
     gap: 1rem;
     padding-right: 1rem;
+}
+
+.card-icons img {
+    width: 24px;
+    transition: transform .5s ease-in-out;
+}
+
+.card-icons img:nth-child(1):hover {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(77%) saturate(1753%) hue-rotate(349deg) brightness(111%) contrast(96%);
+}
+
+.card-icons img:nth-child(2):hover {
+    animation: blink .3s ease-in-out forwards;
+}
+
+.card-icons img:nth-child(3):hover {
+    transform: rotate(360deg);
 }
 
 #news {
@@ -193,6 +211,7 @@ header {
 
 
 #card-container {
+    background-color: #f6f6f6;
     display: grid;
     gap: 1.25rem;
     padding: 1rem;
@@ -216,6 +235,7 @@ header {
 }
 
 #userList {
+    background-color: #f6f6f6;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -257,4 +277,18 @@ header {
 
 #korra {
     background-color: #00BD00;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
