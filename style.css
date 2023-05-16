@@ -64,7 +64,7 @@ nav li p{
     grid-template-columns: auto auto;
     align-items: center;
     gap: 1rem;
-    padding-left: 16px;
+    padding-left: 8px;
 }
 
 #logo h1 {
