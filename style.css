@@ -82,7 +82,7 @@ nav li p {
 #bottom li {
     display: grid;
     grid-template-columns: 25% 1fr;
-    grid-template-rows: 50px;
+    grid-template-rows: auto;
     align-items: center;
     padding-left: 16px;
 }
@@ -387,8 +387,8 @@ header {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: 1fr 4fr;
     }
-    
-    #mid li, #bottom li {
+
+    /* #mid li, #bottom li {
         grid-template-rows: auto;
-}
+} */
 }
