@@ -387,4 +387,8 @@ header {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: 1fr 4fr;
     }
+    
+    #mid li, #bottom li {
+        grid-template-rows: auto;
+}
 }
