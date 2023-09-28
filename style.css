@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Quicksand:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 main {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
     grid-template-rows: 1fr 6fr;
@@ -40,6 +46,7 @@ nav {
     grid-template-rows: 1fr 2fr 2fr;
     place-content: flex-start;
     padding-left: 2rem;
+    padding-right: 4rem;
     gap: 1rem;
 }
 
@@ -49,7 +56,7 @@ nav h1 {
 }
 
 
-nav li p{
+nav li p {
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -80,13 +87,14 @@ nav li p{
     padding-left: 16px;
 }
 
-#mid li:hover, #bottom li:hover{
+#mid li:hover,
+#bottom li:hover {
     background-color: #015789;
     border-radius: 8px;
 }
 
-#mid li:nth-child(1){
-    background-color: rgba(0,0,0,.3);
+#mid li:nth-child(1) {
+    background-color: rgba(0, 0, 0, .3);
     border-radius: 8px;
 }
 
@@ -94,7 +102,8 @@ ul {
     list-style-type: none;
 }
 
-#mid, #bottom {
+#mid,
+#bottom {
     display: grid;
     gap: 1rem;
 }
@@ -148,6 +157,7 @@ header {
     grid-template-columns: 0.25fr 0.5fr 1fr;
     align-items: center;
     padding-left: 2rem;
+    gap: .75rem;
 }
 
 #user-center img:nth-child(2) {
@@ -160,6 +170,7 @@ header {
 #header-bottom {
     display: grid;
     grid-template-columns: 0.1fr 1fr 1fr;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -191,7 +202,7 @@ header {
 #btns {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(3, 0.15fr);
+    grid-template-columns: repeat(3, minmax(100px, 5%));
     place-content: end;
     padding-right: 2rem;
 }
@@ -217,7 +228,8 @@ header {
     padding: 1rem 2rem 0rem 2rem;
 }
 
-#sect_projects p, .user p {
+#sect_projects p,
+.user p {
     color: #7d7e8a;
 }
 
@@ -226,7 +238,8 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px 16px;
-    height: max(600px);
+    /* height: max(600px); */
+    padding-bottom: 2rem;
 }
 
 .project_card {
@@ -365,5 +378,13 @@ header {
 
     100% {
         opacity: 1;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 1fr 4fr;
     }
 }
